@@ -15,19 +15,10 @@ import {
 import { Zap, CheckCircle2 } from "lucide-react";
 
 const applications: string[] = [
-  "CRM Software",
-  "Hospital Management Software",
-  "Habit Tracking App",
-  "Medical App (Doctor & Patient)",
-  "Dental App",
-  "Ecommerce Application (B2B / B2C)",
-  "Vehicle Management & Booking",
-  "Photo & Video Sharing App",
-  "Cosmetics & Geolocation Management",
-  "Fuel Station Management",
-  "Financial App (Lending)",
-  "Ticket Booking App",
-  "Taxi Booking App",
+  "GalleyCloud (private jet catering service)",
+  "AirCrew Connect (Recruiting web application)",
+  "EstatePro",
+  "FragranceFlow",
 ];
 
 const services: string[] = [
@@ -69,7 +60,7 @@ export function WorkHighlights() {
         </motion.div>
 
         {/* Content */}
-        <Grid container justifyContent={"space-between"}>
+        <Grid container justifyContent={"space-between"} gap={{ xs: "1rem" }}>
           {/* Applications */}
           <Grid sx={{ xs: "12", md: "6" }}>
             <motion.div

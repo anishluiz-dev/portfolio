@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
         }}
       >
         <Typography variant="body2" color="text.secondary">
-          © {new Date().getFullYear()} Prince. All rights reserved.
+          © {new Date().getFullYear()} Soris. All rights reserved.
         </Typography>
 
         <Typography

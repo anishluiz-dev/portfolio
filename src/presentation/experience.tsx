@@ -16,12 +16,38 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     id: 1,
-    role: "Node.js Engineer",
-    company: "ITboomi Innovations",
+    role: "Software Engineer",
+    company: "AirCrew Connect",
     period: "2+ Years",
     description:
-      "Spearheaded the backend development of multiple high-impact applications including CRM, Hospital Management, and E-commerce platforms. Integrated complex external services like Google Maps, Payment Gateways, and AI APIs.",
-    tech: ["Node.js", "Express", "MongoDB", "AWS", "Socket.io"],
+      "At Matrix Aviation, I helped build the GalleyCloud platform, developing admin panels, customer interfaces, and delivery apps using React.js, Next.js, Node.js, Nest.js, Socket.io, MongoDB, and cloud platforms like Vercel, Google Cloud, and AWS",
+    tech: [
+      "Next js",
+      "Node js",
+      "Nest js",
+      "Express",
+      "MongoDB",
+      "AWS",
+      "Socket.io",
+    ],
+  },
+  {
+    id: 2,
+    role: "FullStack Engineer",
+    company: "Skill Safari",
+    period: "8 Months",
+    description:
+      "At Skill Safari, I helped build a scalable e-learning platform, developing interactive learning modules and management dashboards using React.js, Node.js, Express.js, and MongoDB, while optimizing backend architecture and ensuring a smooth, seamless user experience",
+    tech: ["Next js", "Node js", "Express", "MongoDB"],
+  },
+  {
+    id: 3,
+    role: "Software Engineer Intern",
+    company: "Vision Group",
+    period: "6 Months",
+    description:
+      "At Vision Group, I gained hands-on experience with image recognition technologies and enhanced my software engineering skills by assisting the team with query development and monitoring image data using their internal tools",
+    tech: ["Python", "MongoDB"],
   },
 ];
 
@@ -59,7 +85,7 @@ export function Experience() {
         </motion.div>
 
         {/* Timeline */}
-        <Box sx={{ position: "relative", maxWidth: 900, mx: "auto" }}>
+        <Box sx={{ position: "relative", width: { xs: "300px", md: "800px" } }}>
           {/* Vertical line for desktop */}
           <Box
             sx={{
@@ -112,7 +138,7 @@ export function Experience() {
                   />
 
                   {/* Experience Content */}
-                  <Box sx={{ flex: 1, maxWidth: "50%" }}>
+                  <Box sx={{ flex: 1, maxWidth: "100%" }}>
                     <Box
                       sx={{
                         display: "flex",

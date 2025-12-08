@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
-  const email = "itsme@arunprince.com";
+  const email = "anish.soris@gmail.com";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(email);
@@ -77,7 +77,7 @@ export function Contact() {
             {/* LinkedIn */}
             <IconButton
               component={Link}
-              href="https://www.linkedin.com/in/arun-prince-developer"
+              href="https://www.linkedin.com/in/soris-anish/"
               target="_blank"
               sx={{
                 border: "1px solid",

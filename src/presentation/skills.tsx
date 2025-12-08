@@ -29,7 +29,7 @@ const skills = [
   {
     category: "Database",
     icon: <Database size={20} color="#22c55e" />,
-    items: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Prisma", "Mongoose"],
+    items: ["MongoDB", "Redis", "MySQL", "Mongoose"],
   },
   {
     category: "Cloud & DevOps",
@@ -44,12 +44,12 @@ const skills = [
   {
     category: "Tools",
     icon: <TerminalIcon size={20} color="#a78bfa" />,
-    items: ["Git", "VS Code", "Postman", "Linux", "Jira"],
+    items: ["Git", "VS Code", "Postman", "Linux", "Jira", "Click Up"],
   },
   {
     category: "Frontend Knowledge",
     icon: <Globe size={20} color="#ec4899" />,
-    items: ["React", "Next.js", "Tailwind CSS", "HTML5", "CSS3"],
+    items: ["React", "Next.js", "Tailwind CSS", "HTML5", "CSS3", "Material Ui"],
   },
 ];
 
@@ -88,7 +88,7 @@ export function Skills() {
         {/* Skills Grid */}
         <Grid container spacing={4}>
           {skills.map((skill, index) => (
-            <Grid key={skill.category} size={4}>
+            <Grid key={skill.category} size={{ xs: 12, md: 6 }}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

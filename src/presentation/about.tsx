@@ -13,7 +13,7 @@ export function About() {
         bgcolor: "background.default",
       }}
     >
-      <Box sx={{ maxWidth: "900px", mx: "auto", px: { xs: 3, md: 6 } }}>
+      <Box>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -36,9 +36,14 @@ export function About() {
           </Typography>
 
           {/* Content + Terminal */}
-          <Grid container spacing={4} alignItems="flex-start">
+          <Grid
+            container
+            spacing={20}
+            alignItems="flex-start"
+            sx={{ flexDirection: { xs: "column", md: "row" } }}
+          >
             {/* Text Column */}
-            <Grid size={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 sx={{
                   color: "text.secondary",
@@ -51,11 +56,12 @@ export function About() {
                   component="span"
                   sx={{ color: "text.primary", fontWeight: 600 }}
                 >
-                  Node.js Engineer
+                  Full-Stack Engineer
                 </Box>{" "}
-                with a passion for building robust, scalable backend systems. My
-                expertise lies in architecting cloud-native solutions and
-                optimizing server performance.
+                with a passion for building robust, scalable web applications. I
+                specialize in creating seamless frontend experiences and
+                designing efficient backend systems, delivering end-to-end
+                solutions.
               </Typography>
 
               <Typography
@@ -64,14 +70,14 @@ export function About() {
                   lineHeight: 1.7,
                 }}
               >
-                With over <strong>2 years</strong> of experience, I've
-                successfully delivered applications ranging from CRM platforms
-                to advanced financial systems.
+                With over <strong>2 years</strong> of experience, I have
+                successfully delivered applications, including an admin
+                dashboard for managing private flight catering systems.
               </Typography>
             </Grid>
 
             {/* Terminal Column */}
-            <Grid size={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Paper
                 elevation={6}
                 sx={{
@@ -101,11 +107,12 @@ export function About() {
                   }}
                 >
                   {`{
-  "name": "Prince",
-  "role": "Node.js Engineer",
-  "experience": "2+ Years",
-  "company": "ITboomi Innovations",
+  "name": "Soris Anish",
+  "role": "Full-Stack Engineer",
+  "experience": "2+ years",
+  "company": "AirCrew Connect, Dubai",
   "focus": [
+    "Frontend Architecture",
     "Backend Architecture",
     "Scalable Systems",
     "API Development"

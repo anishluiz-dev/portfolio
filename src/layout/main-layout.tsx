@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { Container } from "@mui/material";
 import { Navbar } from "../presentation/nav-bar";
 
 interface IMainLayOutProps {
@@ -12,7 +13,7 @@ const MainLayOut: React.FC<IMainLayOutProps> = (props) => {
   return (
     <React.Fragment>
       <Navbar />
-      {children}
+      <Container>{children}</Container>
     </React.Fragment>
   );
 };

@@ -7,6 +7,7 @@ import {
   Server,
   Cloud,
   Github,
+  Monitor,
   Mail,
 } from "lucide-react";
 import { Box, Button, Typography, Grid, Paper, Stack } from "@mui/material";
@@ -66,12 +67,7 @@ export function Hero() {
         />
       </Box>
 
-      <Grid
-        container
-        spacing={6}
-        maxWidth="lg"
-        sx={{ mx: "auto", px: { xs: 3, md: 6 } }}
-      >
+      <Grid container spacing={10}>
         {/* Left Content */}
         <Grid>
           <Stack spacing={6}>
@@ -117,7 +113,7 @@ export function Hero() {
                     }}
                   />
                 </Box>
-                Grinding Backend
+                Grinding FullStack Developer
               </Box>
 
               {/* Heading */}
@@ -130,9 +126,9 @@ export function Hero() {
                   mt: 3,
                 }}
               >
-                Backend{" "}
+                FullStack{" "}
                 <Box component="span" sx={{ color: "primary.main" }}>
-                  Wizardry
+                  Phantom
                 </Box>
                 <br />
                 <Box component="span" sx={{ color: "text.secondary" }}>
@@ -149,8 +145,9 @@ export function Hero() {
                   mt: 2,
                 }}
               >
-                I build scalable, high-performance backend systems using Node.js
-                and Cloud technologies. Turning complex logic into elegant code.
+                I build scalable, high-performance full-stack systems using
+                Node.js, Express.js, Nest.js, Next.js, and cloud technologies,
+                turning complex logic into elegant code.
               </Typography>
             </motion.div>
 
@@ -165,7 +162,7 @@ export function Hero() {
                   variant="contained"
                   size="large"
                   component={Link}
-                  href="https://github.com/prince-arun"
+                  href="https://github.com/SorisAnish17"
                   target="_blank"
                   startIcon={<Github size={20} />}
                   endIcon={<ArrowRight size={18} />}
@@ -178,7 +175,7 @@ export function Hero() {
                   variant="outlined"
                   size="large"
                   component={Link}
-                  href="mailto:itsme@arunprince.com"
+                  href="mailto:anish.soris@gmail.com"
                   startIcon={<Mail size={20} />}
                   sx={{ textTransform: "none" }}
                 >
@@ -198,6 +195,10 @@ export function Hero() {
                 spacing={4}
                 sx={{ color: "text.secondary" }}
               >
+                <Stack direction="row" spacing={1} alignItems="center">
+                  <Monitor size={22} />
+                  <Typography fontSize={14}>Next.js</Typography>
+                </Stack>
                 <Stack direction="row" spacing={1} alignItems="center">
                   <Server size={22} />
                   <Typography fontSize={14}>Node.js</Typography>
@@ -243,7 +244,7 @@ export function Hero() {
                   opacity: 0.8,
                 }}
               >
-                prince@portfolio:~
+                soris@portfolio:~
               </Typography>
 
               {/* Terminal Lines */}
@@ -263,6 +264,8 @@ export function Hero() {
 
                 <Box sx={{ ml: 4, color: "text.secondary" }}>
                   <div>+ nodejs@latest</div>
+                  <div>+ nestjs@latest</div>
+                  <div>+ nextjs@latest</div>
                   <div>+ typescript@5.0</div>
                   <div>+ aws-sdk@3.0</div>
                   <div>+ docker@latest</div>
