@@ -107,7 +107,7 @@ export const Navbar: React.FC = () => {
                 variant="outlined"
                 startIcon={<LinkedInIcon />}
                 component={Link}
-                href=""
+                href="https://www.linkedin.com/in/soris-anish/"
                 target="_blank"
               >
                 LinkedIn
@@ -134,7 +134,7 @@ export const Navbar: React.FC = () => {
 
           <Divider />
 
-          {/* <List>
+          <List>
             {navItems.map((item) => (
               <ListItem key={item.name} disablePadding>
                 <ListItemButton
@@ -146,19 +146,19 @@ export const Navbar: React.FC = () => {
                 </ListItemButton>
               </ListItem>
             ))}
-          </List> */}
+          </List>
 
           <Box px={2} mt={2}>
-            {/* <Button
+            <Button
               fullWidth
               variant="outlined"
               startIcon={<LinkedInIcon />}
               onClick={() => {
-              router.push("https://www.linkedin.com/in/soris-anish/");
+                router.push("https://www.linkedin.com/in/soris-anish/");
               }}
             >
               LinkedIn
-            </Button> */}
+            </Button>
           </Box>
         </Box>
       </Drawer>
