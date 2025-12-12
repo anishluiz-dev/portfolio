@@ -157,7 +157,11 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Stack direction="row" spacing={3} flexWrap="wrap">
+              <Stack
+                direction="row"
+                sx={{ gap: { xs: "2rem" } }}
+                flexWrap="wrap"
+              >
                 <Button
                   variant="contained"
                   size="large"
@@ -166,7 +170,10 @@ export function Hero() {
                   target="_blank"
                   startIcon={<Github size={20} />}
                   endIcon={<ArrowRight size={18} />}
-                  sx={{ textTransform: "none" }}
+                  sx={{
+                    textTransform: "none",
+                    width: { xs: "13rem", md: "15rem" },
+                  }}
                 >
                   View GitHub
                 </Button>
@@ -191,22 +198,29 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <Stack
+                spacing={2}
                 direction="row"
-                spacing={4}
+                alignItems="center"
+                justifyContent="flex-start"
+                flexWrap="wrap"
+                useFlexGap
                 sx={{ color: "text.secondary" }}
               >
                 <Stack direction="row" spacing={1} alignItems="center">
                   <Monitor size={22} />
                   <Typography fontSize={14}>Next.js</Typography>
                 </Stack>
+
                 <Stack direction="row" spacing={1} alignItems="center">
                   <Server size={22} />
                   <Typography fontSize={14}>Node.js</Typography>
                 </Stack>
+
                 <Stack direction="row" spacing={1} alignItems="center">
                   <Database size={22} />
                   <Typography fontSize={14}>Database</Typography>
                 </Stack>
+
                 <Stack direction="row" spacing={1} alignItems="center">
                   <Cloud size={22} />
                   <Typography fontSize={14}>Cloud</Typography>
