@@ -17,7 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <title>Soris dev</title>
       <body>
         <MainLayOut>{children}</MainLayOut>
       </body>
